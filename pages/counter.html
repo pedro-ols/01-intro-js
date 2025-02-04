@@ -8,24 +8,27 @@
     </head>
     <body>
         <div>
-            <h1 id="counter"></h1>
-        </div>
-        <div>
-            <button><a href="./pages/math.html">Ir para math page</a></button>
+            <button><a href="./math.html">Ir para math page</a></button>
         </div>
         <div>
             <button><a href="../index.html">Ir para home page</a></button>
         </div>
         <div class="container">
+        <div class="plus-less-container">
             <div>
-                <button onclick="aumentar()" id="aumentar">Aumentar</button>
+                <button onclick="aumentar()" id="aumentar" class="action-btn">Aumentar</button>
             </div>
             <div>
-                <button onclick="diminuir()" id="diminuir">Diminuir</button>
+                <p id="counter">0</p>
             </div>
             <div>
-                <p id="counter"></p>
+                <button onclick="diminuir()" id="diminuir" class="action-btn">Diminuir</button>
             </div>
+            
+        </div>
+        <div class="reset-container">
+                <button onclick="resetar()" id="resetar" class="reset-btn">Resetar</button>
+        </div>
         </div>
         <script src="../assets/scripts/counter.scripts.js"></script>
     </body>
